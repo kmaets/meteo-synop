@@ -1,30 +1,10 @@
-# React + TypeScript + Vite
+# Weather data - with React Three Fiber
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A weather project on an early stage, that uses React Three Fiber as React renderer for three.js. It's reading weather from IMGW api and in future it will display it as 3D scene.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Installation
+- Clone this project into a new directory
+- Enter project directory and Install package dependencies: `npm install`
+- Use package.json scripts to run the app:<br>
+  - run live server: `npm run dev`<br>
+  - or build and preview: `npm run dev` then `npm run preview`
