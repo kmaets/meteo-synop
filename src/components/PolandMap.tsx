@@ -6,6 +6,7 @@ import { useRef } from 'react';
 import { useGLTF } from '@react-three/drei';
 import { GLTF } from 'three-stdlib';
 import * as THREE from 'three';
+import { ThreeElements } from '@react-three/fiber';
 
 /* interface GLTFResult extends GLTF {
 	nodes: {
@@ -25,7 +26,7 @@ type GLTFResult = GLTF & {
 	animations: THREE.AnimationClip[]
 };
 
-export const PolandMapModel = (props: JSX.IntrinsicElements['group']) => {
+export const PolandMapModel = (props: ThreeElements['group']) => {
 	const group = useRef(null!);
 	const { nodes } = useGLTF('./models/pl-map.glb') as GLTFResult;
 	// const { nodes } = useGLTF('/models/pl-map.gltf') as GLTFResult;
