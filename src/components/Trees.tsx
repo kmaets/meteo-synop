@@ -6,6 +6,7 @@ import { useRef } from 'react';
 import { useGLTF } from '@react-three/drei';
 import { GLTF } from 'three-stdlib';
 import * as THREE from 'three';
+import { ThreeElements } from '@react-three/fiber';
 
 /* interface GLTFResult extends GLTF {
 	nodes: {
@@ -22,7 +23,7 @@ type TreesModels = GLTF & {
 	}
 };
 
-export const TreesModels = (props: JSX.IntrinsicElements['group']) => {
+export const TreesModels = (props: ThreeElements['group']) => {
 	const group = useRef(null!);
 	const { nodes, materials } = useGLTF('./models/low_poly_trees.glb') as TreesModels;
 	// const { nodes, materials } = useGLTF('/models/low_poly_trees.gltf') as TreesModels;
